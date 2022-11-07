@@ -1,0 +1,7 @@
+<div>
+  <div>
+    <app-create-kitten (sendNewKitten)="addKitten($event)"></app-create-kitten>
+    <app-kist-kitten [kittenList]="kittenList" (sendAdoptedKitten)="addAdoptedKitten($event)"></app-kist-kitten>
+  </div>
+  <app-user-kitten [userList]="userList"></app-user-kitten>
+</div>
